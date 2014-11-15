@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<style>
+h1 {
+    text-shadow: 5px 5px 5px #5858FA;
+}
+p.serif {
+    font-family: "Times New Roman", Times, serif;
+}
+head {
+    text-shadow: #CECEF6;
+}
+</style>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body style="background: #E0ECF8;">
+
+<%= yield %>
+
+</body>
+</html>
